@@ -7,9 +7,14 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
+    Button: typeof import('primevue/button')['default']
+    Dialog: typeof import('primevue/dialog')['default']
     Dropdown: typeof import('primevue/dropdown')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
+    InputText: typeof import('primevue/inputtext')['default']
     Menu: (typeof import('./src/components/Menu.vue'))['default']
+    Menubar: typeof import('primevue/menubar')['default']
     MenuHeader: typeof import('./src/components/MenuHeader.vue')['default']
+    Password: typeof import('primevue/password')['default']
   }
 }
