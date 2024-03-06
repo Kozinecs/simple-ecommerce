@@ -5,7 +5,20 @@
         <img alt="logo" src="../assets/vue.svg" />
       </template>
       <template #end>
-        <Button label="Login" icon="pi pi-sign-in" @click="showModal = true" />
+        <Button
+          text
+          icon="pi pi-user"
+          aria-label="Login"
+          rounded
+          @click="showModal = true"
+        />
+        <Button
+          text
+          icon="pi pi-shopping-bag"
+          aria-label="Shopping Cart"
+          rounded
+          @click="showModal = true"
+        />
 
         <Dialog
           v-model="showModal"
